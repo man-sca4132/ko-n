@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="EMMS BET sports betting sandbox interface">
+  <title>EMMS BET</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><b>E</b> EMMS <span>BET</span></div>
+    <nav aria-label="Primary navigation">
+      <button data-v="home">Home</button>
+      <button data-v="sports">Sports</button>
+      <button data-v="wallet">Wallet</button>
+      <button data-v="account">Account</button>
+    </nav>
+    <button id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <aside id="side" aria-label="Site menu">
+    <button data-v="home">🏠 Home</button>
+    <button data-v="sports">⚽ Sports</button>
+    <button data-v="wallet">💳 Wallet</button>
+    <button data-v="kyc">🪪 KYC</button>
+    <button data-v="responsible">🛡 Responsible Gambling</button>
+    <button data-v="account">👤 Account</button>
+    <button data-v="admin">⚙️ Admin</button>
+    <button id="logout">↪ Log out</button>
+  </aside>
+
+  <main id="app" aria-live="polite"></main>
+
+  <footer>
+    <strong>EMMS BET</strong>
+    <span>Customer Care: <a href="tel:0785815485">0785815485</a></span>
+    <small>Sandbox build · no real-money payments</small>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
